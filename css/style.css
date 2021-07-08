@@ -23,6 +23,9 @@
     width: 50%;
     float: left;
 }
+.logo img {
+    padding: 17px;
+}
 
 .header-right {
     width: 50%;
@@ -37,17 +40,17 @@
 ul li a {
     font-size: 16px;
     text-transform: uppercase;
-    color: black;
+    color: #000;
     text-decoration: none;
     transition: .3s all;
 }
 .menu ul li a:hover {
-    color: yellow;
+    color: #f6d601;
 }
 a.Sign.in-btn {
     font-size: 16px;
     text-transform: capitalize!important;
-    background-color: yellow;
+    background-color:#f6d601;
     text-align: center;
     padding: 12px;
     border-radius: 31px;
@@ -56,18 +59,18 @@ a.Sign.in-btn:hover {
     color:var(--text);!important;
 }
 a.Sign.in-btn i {
-    color: red;
+    color:rgb(255, 0, 0);
     padding: 0 8px;
 }
 /* banner_section */
-#banner_section{
+#banner_section {
     background-image: url("../images/banner.jpg");
-    background-size:cover;
+    background-size: cover;
     background-repeat: none;
     background-position: top;
     text-align: center;
-    color:white;
-    padding-bottom: 5%
+    color: #fff;
+    padding: 10%;
 }
 .content-inner h1 {
     font-family: "rightous", cursive;
@@ -82,20 +85,47 @@ a.Sign.in-btn i {
 .content-inner h3 {
     font-size: 30px;
     padding-bottom: 10px;
-    color: yellow;
+    color: #f6d601;
 }
 .content-inner p {
     font-size: 20px;
     padding-bottom: 33px;
 }
 a.btn-read {
-    padding: 14px 24px;
-    color: black;
-    background: yellow;
-
+    padding: 17px 32px;
+    color: #000;
+    background: #fff;
     font-size: 18px;
+    text-decoration: none;
+    transition: 0.7s all;
 }
 a.btn-read:hover {
-    color: white;
+    background-color:#f6d601;
     border-radius: 30px;
+}
+/* display_car */
+div#display_car {
+    text-align: center;
+    padding: 30px;
+}
+.best_car {
+    width: 33%;
+    float: left;
+}
+.titlepage h1 {
+    font-size: 50px;
+    font-family: "righteous", cursive;
+    padding-bottom: 20px;
+}
+.titlepage p {
+    font-size: 21px;
+    font-family: cursive;
+    padding-bottom: 35px;
+}
+.best_car h2 {
+    background:#f6d601;
+    font-size: 51px;
+    padding: 5px;
+    font-family: cursive;
+    font-hight: 700;
 }
