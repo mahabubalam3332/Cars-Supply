@@ -1,3 +1,20 @@
+/* remove margin and padding */
+*{
+    margin:0;
+    padding:0;
+}
+/* fonts */
+@font-face {
+    font-family: 'righteousregular';
+    src: url('../webfonts/Righteous-Regular.woff2') format('woff2'),
+         url('../webfonts/Righteous-Regular.woff') format('woff');
+         url('../webfonts/Righteous-Regular.ttf') format('ttf');
+         url('../webfonts/Righteous-Regular.eot') format('eot');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* variable for color */
 :root{
     --primary: #000;
@@ -5,28 +22,25 @@
     --text:#fff;
     --acent:#3e3e3e;
     /* font variable */
-    --primary:"Rightous", Sens-serif;
+    --primary-fonts:"righteousregular", cursive;
+    --secondary-fonts:"popins", sens-serif;
 }
-
+.section-padding{
+    padding: 7% 0;   
+}
 .container{
-    width: 1180px;
+    width: 1140px;
     margin:0 auto;
 }
 /* headerpart */
 #headerpart {
     width: 85px;
-    padding-bottom: 80px;
+    padding: 4% 6%;
 }
-
 .header-left {
-    display: inline-block;
     width: 50%;
     float: left;
 }
-.logo img {
-    padding: 17px;
-}
-
 .header-right {
     width: 50%;
     float: right;
@@ -48,19 +62,22 @@ ul li a {
     color: #f6d601;
 }
 a.Sign.in-btn {
-    font-size: 16px;
+    font-size: 18px !important;
     text-transform: capitalize!important;
-    background-color:#f6d601;
+    background-color: #f6d601;
     text-align: center;
-    padding: 12px;
-    border-radius: 31px;
+    padding: 11px 21px;
+    border-radius: 50px;
 }
 a.Sign.in-btn:hover {
-    color:var(--text);!important;
+    color:var(--text) !important;
 }
 a.Sign.in-btn i {
-    color:rgb(255, 0, 0);
+    color:var(--primary);
     padding: 0 8px;
+}
+a.Sign.in-btn i:hover {
+    color:var(--text);
 }
 /* banner_section */
 #banner_section {
@@ -70,14 +87,18 @@ a.Sign.in-btn i {
     background-position: top;
     text-align: center;
     color: #fff;
-    padding: 10%;
+    font-family: var(--primary);
+    padding: 11% 0;
 }
-.content-inner h1 {
-    font-family: "rightous", cursive;
-    padding-bottom: 26px;
-    font-size: 50px;
+.title-primary{
+    font-family: var(--primary-fonts);
+    font-size: 60px;
+    padding-bottom: 28px;
+    line-height: 90px;
+    font-weight: bold;
+    font-weight: 700;
 }
-.content-inner h2 {
+.title-secondary {
     font-size: 35px;
     font-weight: 700;
     padding-bottom: 15px;
@@ -87,45 +108,40 @@ a.Sign.in-btn i {
     padding-bottom: 10px;
     color: #f6d601;
 }
-.content-inner p {
+.content-inner p,.variety_inner p {
     font-size: 20px;
-    padding-bottom: 33px;
+    padding-bottom: 7%;
+    line-height: 1.3em;
+    font-family: var(--primary-fonts);
 }
+
 a.btn-read {
-    padding: 17px 32px;
+    padding: 17px 55px;
     color: #000;
     background: #fff;
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
     transition: 0.7s all;
+    font-family:var(--primary-fonts)
 }
 a.btn-read:hover {
     background-color:#f6d601;
     border-radius: 30px;
 }
-/* display_car */
-div#display_car {
+/* variety of cars */
+secetion#variety_of_car {
     text-align: center;
-    padding: 30px;
+    font-family: var(--primary-fonts);
 }
-.best_car {
-    width: 33%;
+.car {
     float: left;
+    width: 33%;
+    padding-bottom: 7%;
 }
-.titlepage h1 {
-    font-size: 50px;
-    font-family: "righteous", cursive;
-    padding-bottom: 20px;
-}
-.titlepage p {
-    font-size: 21px;
-    font-family: cursive;
-    padding-bottom: 35px;
-}
-.best_car h2 {
-    background:#f6d601;
-    font-size: 51px;
-    padding: 5px;
-    font-family: cursive;
-    font-hight: 700;
+.cars_name {
+    float: left;
+    width: 33%;
+    padding: 2% 0;
+    background-color: var(--secondary);
+    margin-top: 2%;
 }
