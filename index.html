@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
    <link rel="stylesheet" href="css/all.min.css">
    <link rel="stylesheet" href="css/fontawesome.min.css">
     <link href="css/style.css" rel="stylesheet"/>
@@ -42,7 +44,7 @@
             </div>
         </div>
     </div>
-  <secetion id="variety_of_car" class="section-padding">
+  <secetion id="variety_of_car">
        <div class="container">
           <div class="variety_inner">
             <h1 class="title-secondary">VARIETY OF CARS </h1>
@@ -67,6 +69,118 @@
         </div>
        </div>
     </secetion>
-   
+    <!-- search car area -->
+    <section id="search_car_area" class="section-padding">
+        <div class="container">
+            <div class="search_inner">
+                <div class="search_conten"></div>
+                <div class="search_conten">
+                    <h2>Find A Best Car</h2>
+                    <form action="#">
+                       <select name="cars" id="">
+                           <option value="1">1</option>
+                           <option value="2">2</option>
+                           <option value="3">3</option>
+                           <option value="4">4</option>
+                       </select>
+                       <select name="cars" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <select name="cars" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <input class="btn-read" type="submit" value="Find Now"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- why choose us  -->
+    <section id="why choose us" class="section-padding">
+        <div class="container">
+            <h2 class="title">WHY CHOOSE US </h2>
+            <p class="sub_title">It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of usin</p>
+                <div class="point">
+                    <div class="number_one points-list">
+                        <h2>01</h2>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                            looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when
+                            looking at its layout.</p>
+                    </div>
+                    <div class="number_two points-list">
+                        <h2>02</h2>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                            looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when
+                            looking at its layout.</p>
+                    </div>
+                    <div class="number_three points-list">
+                        <h2>03</h2>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                            looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when
+                            looking at its layout.</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <!-- testimonial section -->
+    <section id="testimonial" class="section-padding">
+        <div class="container">
+            <h2 class="title">
+                WHAT IS SAYS OUR CUSTOMER</h2>
+            <div class="owl-carousel">
+                <div class="slider_inner">
+                    <img src="images/cross_img.png" alt="">
+                    <div class="bgslide_inner">
+                        <h2 class="name-title">Due Mark</h2>
+                        <h2 class="degignation">Rental</h2>
+                        <p class="testimonial">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <img src="images/te1.png" alt="" class="testimonial-image"/>
+                    </div>
+                </div>
+                <div class="slider_inner">
+                    <img src="images/cross_img.png" alt="">
+                    <div class="bgslide_inner">
+                        <h2 class="name-title">Due Mark</h2>
+                        <h2 class="degignation">Rental</h2>
+                        <p class="testimonial">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <img src="images/te1.png" alt="" class="testimonial-image"/>
+                    </div>
+                </div>
+                <div class="slider_inner">
+                    <img src="images/cross_img.png" alt="">
+                    <div class="bgslide_inner">
+                        <h2 class="name-title">Due Mark</h2>
+                        <h2 class="degignation">Rental</h2>
+                        <p class="testimonial">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <img src="images/te1.png" alt="" class="testimonial-image"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- script here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        items:1,
+    });
+  });</script>
 </body>
 </html>
