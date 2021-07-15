@@ -255,3 +255,31 @@ p.testimonial {
 img.testimonial-image {
     width: 5%! important;
 }
+/* footer_section */
+section#footer_section {
+    background: #fff;
+    text-align: center;
+    padding: 51px 0;
+}
+.footer_inner {
+    font-family: var(--primary-fonts);
+    font-size: 28px;
+}
+.footer_telephone {
+    font-size: 40px;
+    color: var(--acent);
+    line-height: 2;
+    font-weight: 700;
+}
+.footer_responsive {
+    color: var(--acent);
+    
+}
+/* footer_address_section */
+section#footer_address_section {
+    text-align: center;
+    background: #23262D;
+    padding: 24px 0;
+    color:var(--text)
+}
+/* finished the site */
